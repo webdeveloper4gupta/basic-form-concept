@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .suk:after {
+            content:" * ";
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+    <fieldset>
+        <legend><h2>Create User id and password</h2></legend>
+        <label for="aman1" class="suk" > User-id: </label>
+        <input type="email" id="aman1" name="user-id"placeholder="enter your email"required><br><br>
+        <label for="aman2"class="suk"> Password: </label>
+        <input type="password" id="aman2" name="password" maxlength="20" pattern:"[a-z]" required> <br>
+        <small>this is mandatory to put  a-z</small><br><br>
+        <label for="aman3" clas="suk"> Confirm-Password: </label>
+        <input type="password"id="aman3" maxlength="20" required>
+    </fieldset>
+    <fieldset>
+        <legend><h2>Personal information</h2></legend>
+        <img src="https://th.bing.com/th/id/OIP.qRH-viaTdgh-nLyVA3sKkwHaGa?pid=ImgDet&rs=1" alt="" height="100px" width="100px" align="right">
+        <label for="aman4" class="suk">First Name: </label>
+        <input type="text" id="aman4" placeholder="enter your name" required><br><br>
+        <label for="aman5" class="suk">Last Name:</label>
+        
+        <input type="text" id="aman5"placeholder="enter your last name" required><br><br>
+        <label for="aman6" class="suk"> Gender</label>
+        <input type="radio" id="aman6" name="radio">Male
+        <input type="radio" id="aman7" name="radio">Female <br> <br>
+        <label for="aman8" class="suk">Birthday:</label>
+        <input type="date" id="aman8" name="date"><br><br>
+        <label for="aman9" class="suk">Country:</label>
+        <input type="text" id="aman9" name="country" ><br><br>
+        <label for="aman10" class="suk">E-mail</label>
+       <input type="email" id="aman10" required><br><br>
+        <big class="suk">Address</big><br>
+       <textarea name="address" id="aman11" cols="30" rows="10" placeholder="enter your address  here"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend><h2>Educational Details:</h2></legend>
+        <span>Degree:</span>
+        <select name="Degree" id="aman11" value="degree">
+            <option value="Be">B.E</option>
+            <option value="cse">CSE</option>
+        </select><br><br>
+        <label for="aman12" class="suk">Certified-course:</label>
+        <textarea name="" id="aman12" cols="30" rows="10" placeholder="enter here"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend><h2>Work Experince:</h2></legend>
+         <label for="aman13" class="suk">Knowledge-in:</label>
+         <input type="checkbox" id="aman113" >HTML 
+          <input type="checkbox">class
+          <input type="checkbox">Javascript
+          <br><br>
+          <label for="aman15" class="suk">Year of experince:</label>
+          <input type="number" id="aman15">
+    </fieldset>
+    <br><br>
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>
